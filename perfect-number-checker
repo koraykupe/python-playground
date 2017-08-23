@@ -1,0 +1,11 @@
+while True:
+    number = int(input("Enter the number: "))
+    divisors = range(1, number)
+    sum = 0
+    for i in divisors:
+        if number % i == 0:
+            sum += i
+    if sum == number:
+        print("Perfect number")
+    else:
+        print("Not perfect number")
